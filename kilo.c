@@ -331,7 +331,7 @@ void editorDrawStatusBar(struct abuf *ab) {
 	abAppend(ab, status, len);
 	while (len < E.screencols) {
 		if (E.screencols - len == rlen) {
-			abAppend(ab, status, len);
+			abAppend(ab, rstatus, rlen);
 			break;
 		} else {
 			abAppend(ab, " ", 1);
